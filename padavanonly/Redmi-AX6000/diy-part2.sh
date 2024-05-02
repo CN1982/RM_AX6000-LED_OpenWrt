@@ -27,7 +27,7 @@ sed -i "s/hostname='ImmortalWrt'/hostname='OpenWrt'/g" package/base-files/files/
 sed -i 's/"SoftEther VPN Service"/"SoftEther VPN"/g' `egrep "SoftEther VPN Service" -rl ./`
 sed -i 's/"AliDDNS"/"阿里DDNS"/g' `egrep "AliDDNS" -rl ./`
 sed -i 's/"FileBrowser"/"文件管理"/g' `egrep "FileBrowser" -rl ./`
-sed -i 's/"frp Client"/"FRP客户端"/g' `egrep "frp Client" -rl ./`
+sed -i 's/"frp 客户端""/"FRP客户端"/g' `egrep "frp 客户端"" -rl ./`
 sed -i 's/"SoftEther Status"/"SoftEther"/g' `egrep "SoftEther Status" -rl ./`
 
 cat > package/base-files/files/etc/banner << EOF
