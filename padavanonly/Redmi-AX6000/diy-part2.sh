@@ -29,3 +29,14 @@ sed -i 's/"AliDDNS"/"阿里DDNS"/g' `egrep "AliDDNS" -rl ./`
 sed -i 's/"FileBrowser"/"文件管理"/g' `egrep "FileBrowser" -rl ./`
 sed -i 's/"frp Client"/"FRP客户端"/g' `egrep "frp Client" -rl ./`
 sed -i 's/"SoftEther Status"/"SoftEther"/g' `egrep "SoftEther Status" -rl ./`
+
+cat > package/base-files/files/etc/banner << EOF
+  _______                     ________        __
+ |       |.-----.-----.-----.|  |  |  |.----.|  |_
+ |   -   ||  _  |  -__|     ||  |  |  ||   _||   _|
+ |_______||   __|_____|__|__||________||__|  |____|
+          |__| W I R E L E S S   F R E E D O M
+ -----------------------------------------------------
+ %D %V, %C
+ -----------------------------------------------------
+EOF
