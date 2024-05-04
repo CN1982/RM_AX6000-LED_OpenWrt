@@ -27,8 +27,16 @@ sed -i "s/hostname='ImmortalWrt'/hostname='OpenWrt'/g" package/base-files/files/
 sed -i 's/"SoftEther VPN Service"/"SoftEther VPN"/g' `egrep "SoftEther VPN Service" -rl ./`
 sed -i 's/"AliDDNS"/"阿里DDNS"/g' `egrep "AliDDNS" -rl ./`
 sed -i 's/"FileBrowser"/"文件管理"/g' `egrep "FileBrowser" -rl ./`
-sed -i 's/"frp 客户端""/"FRP客户端"/g' `egrep "frp 客户端"" -rl ./`
 sed -i 's/"SoftEther Status"/"SoftEther"/g' `egrep "SoftEther Status" -rl ./`
+sed -i 's/"MWAN3 分流助手"/"分流助手"/g' `egrep -rl 'MWAN3 分流助手' ./`
+sed -i 's/"FileBrowser"/"文件管理"/g' `egrep -rl 'FileBrowser' ./`
+sed -i 's/"广告屏蔽大师 Plus+"/"广告屏蔽"/g' `egrep -rl '广告屏蔽大师 Plus+' ./`
+sed -i 's/"AList"/"文件搜刮"/g' `egrep -rl 'AList' ./`
+sed -i 's/"EASY MESH"/"MESH组网"/g' `egrep -rl 'EASY MESH' ./`
+sed -i 's/"服务质量(QoS)"/"服务质量"/g' `egrep -rl '服务质量(QoS)' ./`
+sed -i 's/"frp 客户端"/"FRP客户端"/g' `egrep -rl 'frp 客户端' ./`
+sed -i 's/"解除网易云音乐播放限制"/"网易云音乐"/g' `egrep -rl '解除网易云音乐播放限制' ./`
+sed -i 's/"Multi Stream daemon Lite"/"msd_lite"/g' `egrep -rl 'Multi Stream daemon Lite' ./`
 
 cat > package/base-files/files/etc/banner << EOF
   _______                     ________        __
