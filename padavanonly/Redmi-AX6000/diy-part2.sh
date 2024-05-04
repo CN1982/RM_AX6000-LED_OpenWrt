@@ -31,7 +31,7 @@ sed -i 's/"SoftEther Status"/"SoftEther"/g' `egrep "SoftEther Status" -rl ./`
 sed -i 's/"MWAN3 分流助手"/"分流助手"/g' `egrep -rl 'MWAN3 分流助手' ./`
 sed -i 's/"FileBrowser"/"文件管理"/g' `egrep -rl 'FileBrowser' ./`
 sed -i 's/"广告屏蔽大师 Plus+"/"广告屏蔽"/g' `egrep -rl '广告屏蔽大师 Plus+' ./`
-sed -i 's/"AList"/"文件搜刮"/g' `egrep -rl 'AList' ./`
+sed -i 's/"AList"/"影视搜刮"/g' `egrep -rl 'AList' ./`
 sed -i 's/"EASY MESH"/"MESH组网"/g' `egrep -rl 'EASY MESH' ./`
 sed -i 's/"服务质量(QoS)"/"服务质量"/g' `egrep -rl '服务质量(QoS)' ./`
 sed -i 's/"frp 客户端"/"FRP客户端"/g' `egrep -rl 'frp 客户端' ./`
