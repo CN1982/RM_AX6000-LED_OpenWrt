@@ -34,9 +34,11 @@ sed -i 's/"广告屏蔽大师 Plus+"/"广告屏蔽"/g' `egrep -rl '广告屏蔽�
 sed -i 's/"AList"/"影视搜刮"/g' `egrep -rl 'AList' ./`
 sed -i 's/"EASY MESH"/"MESH组网"/g' `egrep -rl 'EASY MESH' ./`
 sed -i 's/"服务质量(QoS)"/"服务质量"/g' `egrep -rl '服务质量(QoS)' ./`
+sed -i 's/"服务质量（QoS）"/"服务质量"/g' `egrep -rl '服务质量（QoS）' ./`
 sed -i 's/"frp 客户端"/"FRP客户端"/g' `egrep -rl 'frp 客户端' ./`
 sed -i 's/"解除网易云音乐播放限制"/"网易云音乐"/g' `egrep -rl '解除网易云音乐播放限制' ./`
 sed -i 's/"Multi Stream daemon Lite"/"msd_lite"/g' `egrep -rl 'Multi Stream daemon Lite' ./`
+sed -i 's/"KMS 服务器"/"KMS服务器"/g' `egrep -rl 'KMS 服务器' ./`
 
 cat > package/base-files/files/etc/banner << EOF
   _______                     ________        __
